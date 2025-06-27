@@ -30,6 +30,14 @@ services:
     version: "1.0"
   - name: TPP_services_in_FCS
     version: "1.0"
+- serviceName: services:add3Ints
+  packages:
+  - name: TPP_services_in_FCS
+    version: "1.0"
+- serviceName: pub.math:addInts
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2061
 - serviceName: project.siqa_git_azpp_2706.integrations:deepclonetest
   packages:
   - name: SIQA_GIT_AZPP_2706Project
