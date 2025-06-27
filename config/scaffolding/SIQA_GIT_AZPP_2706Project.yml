@@ -8,6 +8,7 @@ packages:
   gitUsername: rimabarman
   gitBranch: main
 - name: TPP_services_in_FCS
+  version: "1.0"
   gitServerName: SIQA_KVV_IBM
   gitUrl: https://github.com/Karthik-V-IBM-10
   gitUsername: Karthik-V-IBM-10
@@ -17,13 +18,23 @@ services:
   packages:
   - name: SIQA_GIT_AZPP_2706Project
     version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
 - serviceName: pub.alert:emit
   packages:
   - name: WmPublic
     version: 11.1.0.0.2061
+- serviceName: project.siqa_git_azpp_2706.integrations:Call_FCS_TPP
+  packages:
+  - name: SIQA_GIT_AZPP_2706Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
 - serviceName: project.siqa_git_azpp_2706.integrations:deepclonetest
   packages:
   - name: SIQA_GIT_AZPP_2706Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
     version: "1.0"
 - serviceName: pub.string:stringToBytes
   packages:
